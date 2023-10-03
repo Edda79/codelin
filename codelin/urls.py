@@ -1,0 +1,8 @@
+# codeln/urls.py
+from django.contrib import admin
+from django.urls import include, path
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('api/', include('app.urls')),  # Incluez les URLs de l'application "app"
+]
